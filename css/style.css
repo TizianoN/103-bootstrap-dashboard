@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+}
+
+/* # DEBUG */
+.box {
+  min-height: 80px;
+  line-height: 80px;
+  border: 2px dashed red;
+}
+
+.box.tall {
+  min-height: 200px;
+  line-height: 200px;
+}
+
+.box.short {
+  min-height: 35px;
+  line-height: 35px;
+}
+
+/* # MAIN */
+
+.cs-main {
+  height: calc(100% - 56px);
+
+  display: flex;
+}
+
+/* # MAIN NAVBAR */
+
+.cs-nav {
+  background-color: aqua;
+  width: 50px;
+}
+
+/* # MAIN CONTENT */
+
+.main-content {
+  background-color: orange;
+  /* flex-grow: 1; */
+  width: calc(100% - 50px);
+}
+
+/* # MAIN CONTENT HEADER */
+
+.mc-header {
+  background-color: greenyellow;
+}
+
+/* # OFFCANVAS */
+
+.offcanvas.offcanvas-end {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* # MAIN CONTENT CARDS */
+
+@media screen and (min-width: 768px) {
+  .cs-nav {
+    width: 100px;
+  }
+  .main-content {
+    width: calc(100% - 100px);
+  }
+}
